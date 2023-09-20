@@ -11,7 +11,6 @@ public class SealedExample {
         ie.methodD();
         ie.methodE();
         System.out.println();
-
         InterfaceF ig = impl;
         ig.methodD();
         ig.methodE();
