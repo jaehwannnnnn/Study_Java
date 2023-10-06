@@ -14,4 +14,18 @@ public class Student {
     public String getName() {
         return name;
     }
+
+    public int hashCode() {
+        int hashCode = no + name.hashCode();
+        return hashCode;
+    }
+
+    public boolean equals(Object obj) {
+        if (obj instanceof Student target) {
+            if (no == target.getNo() && name.equals(target.getName())) {
+                return true;
+            }
+        }
+        return false;
+    }
 }
